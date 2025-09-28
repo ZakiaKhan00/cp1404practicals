@@ -20,4 +20,4 @@ I need to start practicals earlier in the week to reduce anxiety.
 
 What are you doing really well for practicals in this subject?
 Iam learning to use/explore GitHub.
-I give myself a little "yay" in the middle of prac class when things work out.
+I give myself a little "yes" in the middle of prac class when things work out.
