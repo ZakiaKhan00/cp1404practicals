@@ -6,14 +6,16 @@ import random
 
 
 def main():
-    score = float(input("Enter score: "))
-    print(determine_score_status(score))
+    """Program to determine score status"""
+    user_score = float(input("Enter score: "))
+    print(determine_score_status(user_score))
 
     random_score = random.randint(0,100)
     print(f"Random score is: {random_score}")
     print(determine_score_status(random_score))
 
 def determine_score_status(score):
+    """Determine status of the score"""
     if score < 0 or score > 100:
         return("Invalid score")
     elif score >= 90:
