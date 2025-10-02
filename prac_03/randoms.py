@@ -12,6 +12,7 @@ print(random.randrange(3, 10, 2))  # line 2
 #Could it produce 4? No, 4 doesn't fall in that sequence
 
 print(random.uniform(2.5, 5.5))  # line 3
+#Each time I run Line 3, it prints floating numbers between 2.5 and 5.5
 #Smallest: 2.5
 #Largest: 5.5
 
