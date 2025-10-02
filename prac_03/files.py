@@ -8,6 +8,7 @@ readlines()
 for line in file
 
 """
+
 #1. Write code that asks the user for their name, then opens a file called name.txt and writes that name to it.
 name = input("Enter your name: ")
 out_file = open ("name.txt", 'w')
@@ -21,3 +22,14 @@ in_file.close
 print(f"Hi {name}!")
 
 #3.Create a text file called numbers.txt and save it in your prac directory. Write code that opens numbers.txt, reads only the first two numbers, adds them together then prints the result.
+with open("numbers.txt", "r") as in_file:
+    number1 = int(in_file.readline().strip()) #reads ones line
+    number2 = int(in_file.readline().strip())
+    print(number1 + number2)
+
+#4. Now write a fourth block of code that prints the total for all lines in numbers.txt. This should work for a file with any number of numbers. Use with instead of open and close for this question.
+total = 0
+with open("numbers.txt", "r") as in_file:
+    for line in in_file: #line by line
+        total += int(line.strip())
+print(total)
