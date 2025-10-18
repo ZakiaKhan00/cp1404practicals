@@ -8,13 +8,11 @@ FILENAME = "wimbledon.csv"
 INDEX_COUNTRY = 1
 INDEX_CHAMPION = 2
 
-
 def main():
     """Program to read data file and print details about Wimbledon information."""
     records = load_records(FILENAME)
     champion_to_count, countries = process_records(records)
     display_results(champion_to_count, countries)
-
 
 def process_records(records):
     """Create dictionary of champions and set of countries from Wimbledon records."""
@@ -28,7 +26,6 @@ def process_records(records):
             champion_to_count[record[INDEX_CHAMPION]] = 1
     return champion_to_count, countries
 
-
 def display_results(champion_to_count, countries):
     """Display champions with their win counts and list of winning countries."""
     print("Wimbledon Champions: ")
@@ -37,7 +34,6 @@ def display_results(champion_to_count, countries):
         print(f"{name:{max_champion_len}} {count}")
     print(f"\nThese {len(countries)} countries have won Wimbledon: ")
     print(", ".join(sorted(countries)))
-
 
 def load_records(filename):
     """Load data from csv file into a list of lists."""
@@ -48,6 +44,5 @@ def load_records(filename):
             parts = line.strip().split(",")
             records.append(parts)
     return records
-
 
 main()
