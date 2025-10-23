@@ -10,7 +10,7 @@ Actual:   34 minutes
 def main():
     """Store users emails and names in a dictionary"""
     email_to_name = {}
-    email = input("Email: ")
+    email = input("Email: ").strip().lower()
     while email != "" :
         name = get_name_from_email(email)
         confirmation = input(f"Is your name {name}? (Y/n) ").strip().lower()
