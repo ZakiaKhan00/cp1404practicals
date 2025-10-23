@@ -10,7 +10,7 @@ MINIMUM = 1
 MAXIMUM = 45
 
 def main():
-    """Get the number of quick pick from user."""
+    """Get the number of quick pick from the user they wish to generate."""
     number_of_quick_picks = int(input("How many quick picks? "))
     while number_of_quick_picks <= 0:
         print("Please enter a number greater than zero.")

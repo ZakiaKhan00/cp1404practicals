@@ -25,7 +25,7 @@ def print_report(incomes):
 main()
 
 """
-Test Case
+Test Case:
 
 How many months? 5
 Enter income for month 1: 120
