@@ -17,7 +17,7 @@ class SquareNumberApp(App):
     def build(self):
         """ build the Kivy app from the kv file """
         Window.size = (200, 100)
-        self.title = "Square Number"
+        self.title = "Square Number 2"
         self.root = Builder.load_file('squaring.kv')
         return self.root
 
@@ -27,7 +27,7 @@ class SquareNumberApp(App):
             result = float(value) ** 2
             self.root.ids.output_label.text = str(result)
         except ValueError:
-            pass
+            self.root.ids.output_label.text = "Invalid input"
 
 
 SquareNumberApp().run()
