@@ -11,7 +11,6 @@ __author__ = "Zakia Khan"
 
 MILES_TO_KM = 1.60934
 
-
 class MilesToKmApp(App):
     """Main app class for converting miles to kilometres."""
     result_text = StringProperty()
