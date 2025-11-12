@@ -6,7 +6,7 @@ BoxLayout:
 
         TextInput:
             id: miles_input
-            font_size: 32
+            font_size: 45
             on_text: app.handle_calculate(self.text)
 
         BoxLayout:
@@ -28,5 +28,5 @@ BoxLayout:
     Label:
         id: output_label
         text: str(app.result_text)
-        font_size: 32
+        font_size: 45
         color: (1, 1, 0, 1)
