@@ -4,7 +4,6 @@ import wikipedia
 
 INPUT_PROMPT = "Enter page title: "
 
-
 def main():
     """Program to search for Wikipedia pages based on user input."""
     search_term = input(INPUT_PROMPT)
